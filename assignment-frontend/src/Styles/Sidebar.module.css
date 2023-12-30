@@ -1,0 +1,84 @@
+.sidebarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: rgb(247, 241, 241);
+}
+.sideCollapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* min-width: 250px; */
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: rgb(247, 241, 241);
+    width: 70px !important;
+}
+.upDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upDetails a{
+    color: black;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.logo > span:nth-child(1){
+    font-size: 35px;
+    color: rgb(235, 51, 51);
+}
+.sideOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideOptions > span:nth-child(1){
+    margin-right: 8px;
+    font-size: 22px;
+}
+.downside{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.downDetails > div{
+    margin: 5px 0;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+#active{
+    color: red;
+}
+
+/* ===================================== */
+
+@media only screen and (max-width: 800px){
+    .sidebarContainer{
+        position: fixed;
+    }
+}

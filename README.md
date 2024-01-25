@@ -8,8 +8,8 @@ File Structure---------<br>
 5). There is a seperate folder of database connection named db.<br>
 <br>
 Database Connection----------<br>
-I used MongoDB as database and wrote use mongoose library to connect to the database.<br><br>
-
+I used MongoDB as database and wrote use mongoose library to connect to the database.<br>
+<br>
 Functionalities of this project-----------<br>
 1). Create a Task---><br>
 For creating a task i have taken he title, description and dueDate from the user from request.body after that i have put a validation of checking that the use has given the title and the description if user did not give any of them the error message thrown else the new card is created in the database.<br>

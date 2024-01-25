@@ -35,7 +35,7 @@ const deleteTask = async (req, res) => {
 
 // Function to update a task................
 const updateTask = async (req, res) => {
-  const { title, description } = req.body;
+  const { title, description, dueDate } = req.body;
   try {
     if (!title || !description) {
       return res
@@ -44,7 +44,7 @@ const updateTask = async (req, res) => {
     }
     const taskInDb = await Task.findByIdAndUpdate(
       req.params.id,
-      { title: title, description: description },
+      { title: title, description: description, dueDate: dueDate },
       { new: true }
     );
     return res

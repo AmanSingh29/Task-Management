@@ -10,10 +10,10 @@ app.use(express.json());
 app.use(cors());
 
 //models
-require("./Models/cardSchema");
+require("./Models/taskSchema");
 
 //Routes
-app.use("/api", require("./Routes/cardRoutes"));
+app.use("/api", require("./Routes/taskRoutes"));
 
 app.listen(PORT, () => {
   console.log(`Server has startes at ${PORT}`);
